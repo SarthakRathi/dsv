@@ -12,6 +12,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      HEll
       <Sidebar />
     </ThemeProvider>
   );
