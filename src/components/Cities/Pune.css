@@ -1,0 +1,24 @@
+.pune {
+  display: flex;
+  flex-direction: column;
+}
+
+.pune1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.pune2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.pcard {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1b24;
+  border: 2px solid #bb86fc;
+}

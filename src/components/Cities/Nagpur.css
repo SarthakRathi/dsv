@@ -1,0 +1,24 @@
+.nagpur {
+  display: flex;
+  flex-direction: column;
+}
+
+.nagpur1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.nagpur2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.ncard {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1b24;
+  border: 2px solid #bb86fc;
+}

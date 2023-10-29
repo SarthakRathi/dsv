@@ -1,0 +1,29 @@
+.imp {
+  display: flex;
+  flex-direction: row;
+  color: antiquewhite;
+}
+
+.left {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: "#272928";
+  width: 320px;
+}
+
+.sidetitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+  color: #bb86fc;
+}
+
+.cities p:hover {
+  background-color: #bb86fc;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  border-radius: 8px;
+}

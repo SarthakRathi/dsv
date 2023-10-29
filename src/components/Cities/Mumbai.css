@@ -1,0 +1,24 @@
+.mumbai {
+  display: flex;
+  flex-direction: column;
+}
+
+.mumbai1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.mumbai2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.mcard {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1b24;
+  border: 2px solid #bb86fc;
+}

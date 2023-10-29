@@ -1,0 +1,24 @@
+.bangalore {
+  display: flex;
+  flex-direction: column;
+}
+
+.bangalore1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.bangalore2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.bcard {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1b24;
+  border: 2px solid #bb86fc;
+}
