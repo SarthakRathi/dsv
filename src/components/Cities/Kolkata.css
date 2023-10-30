@@ -20,5 +20,8 @@
   align-items: center;
   justify-content: center;
   background-color: #1f1b24;
+}
+
+.kcard:hover {
   border: 2px solid #bb86fc;
 }
