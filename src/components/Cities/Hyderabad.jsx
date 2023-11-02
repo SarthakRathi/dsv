@@ -1,13 +1,13 @@
 import React from 'react'
-import "./Mumbai.css"
+import "./Hyderabad.css"
 import { Paper, Typography } from '@mui/material'
 import { BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 import { PieChart, Pie, Cell, Legend } from 'recharts';
 
-const Mumbai = () => {
+const Hyderabad = () => {
 
-    const MumbaiPopulation = [
+    const HyderabadPopulation = [
         { year: 2011, Population: 5107691 },
         { year: 2012, Population: 5260195 },
         { year: 2013, Population: 5417253 },
@@ -23,14 +23,14 @@ const Mumbai = () => {
         { year: 2023, Population: 7166374 },
     ];
 
-    const MumbaiVehicle = [
+    const HyderabadVehicle = [
         { vehicle: 'Cars', count: 530.02 },
         { vehicle: 'Transport', count: 139.83 },
         { vehicle: 'Scooter', count: 405.39 },
         { vehicle: 'Motorcycle', count: 1803.09 },
     ];
 
-    const MumbaiCO2 = [
+    const HyderabadCO2 = [
         { name: 'Transport', value: 110500 },
         { name: 'Residential', value: 9550 },
         { name: 'Industrial', value: 21050 },
@@ -38,7 +38,7 @@ const Mumbai = () => {
         { name: 'Diesel Generator', value: 3400 }
     ];
 
-    const MumbaiSO2 = [
+    const HyderabadSO2 = [
         { name: 'Transport', value: 500 },
         { name: 'Residential', value: 300 },
         { name: 'Industrial', value: 2500 },
@@ -49,13 +49,13 @@ const Mumbai = () => {
     const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8', '#a3e4d7'];
 
     return (
-        <div className="mumbai">
-            <div className="mumbai1">
-                <Paper elevation={3} className='mcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
+        <div className="hyderabad">
+            <div className="hyderabad1">
+                <Paper elevation={3} className='hcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
                     <BarChart
                         width={450}
                         height={270}
-                        data={MumbaiPopulation}
+                        data={HyderabadPopulation}
                     >
                         <XAxis dataKey="year" />
                         <YAxis />
@@ -67,9 +67,9 @@ const Mumbai = () => {
                         Increase in Population
                     </Typography>
                 </Paper>
-                <Paper elevation={3} className='mcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
+                <Paper elevation={3} className='hcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
                     <ResponsiveContainer width="100%" height={300}>
-                        <RadarChart data={MumbaiVehicle}>
+                        <RadarChart data={HyderabadVehicle}>
                             <PolarGrid />
                             <PolarAngleAxis dataKey="vehicle" />
                             <PolarRadiusAxis angle={45} domain={[0, 2000]} />
@@ -82,13 +82,13 @@ const Mumbai = () => {
                     </Typography>
                 </Paper>
             </div>
-            <div className="mumbai2">
-                <Paper elevation={3} className='mcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
+            <div className="hyderabad2">
+                <Paper elevation={3} className='hcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
                     <ResponsiveContainer width="100%" height={270}>
                         <PieChart>
                             <Pie
                                 dataKey="value"
-                                data={MumbaiCO2}
+                                data={HyderabadCO2}
                                 nameKey="name"
                                 cx="50%"
                                 cy="50%"
@@ -97,7 +97,7 @@ const Mumbai = () => {
                                 label
                             >
                                 {
-                                    MumbaiCO2.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index]} />)
+                                    HyderabadCO2.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index]} />)
                                 }
                             </Pie>
                             <Tooltip />
@@ -109,12 +109,12 @@ const Mumbai = () => {
                         CO2 Emmisions
                     </Typography>
                 </Paper>
-                <Paper elevation={3} className='mcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
+                <Paper elevation={3} className='hcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
                     <ResponsiveContainer width="100%" height={270}>
                         <PieChart>
                             <Pie
                                 dataKey="value"
-                                data={MumbaiSO2}
+                                data={HyderabadSO2}
                                 nameKey="name"
                                 cx="50%"
                                 cy="50%"
@@ -123,7 +123,7 @@ const Mumbai = () => {
                                 label
                             >
                                 {
-                                    MumbaiSO2.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index]} />)
+                                    HyderabadSO2.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index]} />)
                                 }
                             </Pie>
                             <Tooltip />
@@ -140,4 +140,4 @@ const Mumbai = () => {
     )
 }
 
-export default Mumbai
+export default Hyderabad

@@ -74,7 +74,7 @@ const Pune = () => {
                         <RadarChart data={PuneVehicle}>
                             <PolarGrid />
                             <PolarAngleAxis dataKey="vehicle" />
-                            <PolarRadiusAxis angle={50} domain={[0, 2000]} />
+                            <PolarRadiusAxis angle={45} domain={[0, 2000]} />
                             <Radar name="Vehicle Count" dataKey="count" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
                         </RadarChart>
                     </ResponsiveContainer>

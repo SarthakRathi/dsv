@@ -8,6 +8,7 @@ import Delhi from './Cities/Delhi';
 import Kolkata from './Cities/Kolkata';
 import Nagpur from './Cities/Nagpur';
 import Bangalore from './Cities/Bangalore';
+import Hyderabad from './Cities/Hyderabad';
 import Selection from './Cities/Selection';
 
 const Sidebar = () => {
@@ -71,6 +72,13 @@ const Sidebar = () => {
                             Bangalore
                         </Typography>
                     </div>
+
+                    <div className="city">
+                        <Typography variant="body1" sx={{ fontSize: "20px", mx: 4, p: 2 }} onClick={() => handleCityClick("Hyderabad")}>
+                            <LocationOn fontSize="small" sx={{ mr: 2 }} />
+                            Hyderabad
+                        </Typography>
+                    </div>
                 </div>
             </div>
 
@@ -100,6 +108,10 @@ const Sidebar = () => {
 
             {selectedCity === "Bangalore" ? (
                 <Bangalore />
+            ) : null}
+
+            {selectedCity === "Hyderabad" ? (
+                <Hyderabad />
             ) : null}
 
         </div>
