@@ -1,11 +1,17 @@
 import React from 'react';
 import "./Pune.css"
-import { Paper, Typography } from '@mui/material'
+import { Paper, Typography, Button } from '@mui/material'
 import { BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 import { PieChart, Pie, Cell, Legend } from 'recharts';
 
 const Pune = () => {
+
+    const handleClick = () => {
+        window.open('https://docs.google.com/spreadsheets/d/1fWvAvD8_auLlCxWhsKXzcSJPI45wgVyqIInO3hsJBHI/edit#gid=0');
+    };
+
+
     const PunePopulation = [
         { year: 2011, Population: 5107691 },
         { year: 2012, Population: 5260195 },
@@ -145,6 +151,10 @@ const Pune = () => {
                 </Typography>
 
             </Paper>
+
+            <Button variant="contained" sx={{ mx: 5, backgroundColor: "rgb(136, 132, 216);" }} onClick={handleClick}>
+                Go to Dataset
+            </Button>
 
         </div>
     )

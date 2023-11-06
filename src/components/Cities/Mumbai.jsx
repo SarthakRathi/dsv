@@ -7,6 +7,10 @@ import { PieChart, Pie, Cell, Legend } from 'recharts';
 
 const Mumbai = () => {
 
+    const handleClick = () => {
+        window.open('https://docs.google.com/spreadsheets/d/1fWvAvD8_auLlCxWhsKXzcSJPI45wgVyqIInO3hsJBHI/edit#gid=2014353338');
+    };
+
     const MumbaiPopulation = [
         { year: 2011, Population: 5107691 },
         { year: 2012, Population: 5260195 },
@@ -135,6 +139,10 @@ const Mumbai = () => {
                         SO2 Emmisions
                     </Typography>
                 </Paper>
+
+                <Button variant="contained" sx={{ mx: 5, backgroundColor: "rgb(136, 132, 216);" }} onClick={handleClick}>
+                    Go to Dataset
+                </Button>
             </div>
         </div>
     )
