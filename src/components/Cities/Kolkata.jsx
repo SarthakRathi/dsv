@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Kolkata.css"
-import { Paper, Typography } from '@mui/material'
+import { Paper, Typography, Button } from '@mui/material'
 import { BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 import { PieChart, Pie, Cell, Legend } from 'recharts';
@@ -12,42 +12,42 @@ const Kolkata = () => {
     };
 
     const KolkataPopulation = [
-        { year: 2011, Population: 5107691 },
-        { year: 2012, Population: 5260195 },
-        { year: 2013, Population: 5417253 },
-        { year: 2014, Population: 5579001 },
-        { year: 2015, Population: 5745577 },
-        { year: 2016, Population: 5917128 },
-        { year: 2017, Population: 6093800 },
-        { year: 2018, Population: 6275748 },
-        { year: 2019, Population: 6451618 },
-        { year: 2020, Population: 6629347 },
-        { year: 2021, Population: 6807984 },
-        { year: 2022, Population: 6987077 },
-        { year: 2023, Population: 7166374 },
+        { year: 2011, Population: 14085783 },
+        { year: 2012, Population: 14169000 },
+        { year: 2013, Population: 14253000 },
+        { year: 2014, Population: 14338000 },
+        { year: 2015, Population: 14423000 },
+        { year: 2016, Population: 14508000 },
+        { year: 2017, Population: 14594000 },
+        { year: 2018, Population: 14681000 },
+        { year: 2019, Population: 14755000 },
+        { year: 2020, Population: 14850000 },
+        { year: 2021, Population: 14974000 },
+        { year: 2022, Population: 15134000 },
+        { year: 2023, Population: 15333000 },
     ];
 
     const KolkataVehicle = [
-        { vehicle: 'Cars', count: 530.02 },
-        { vehicle: 'Transport', count: 139.83 },
-        { vehicle: 'Scooter', count: 405.39 },
-        { vehicle: 'Motorcycle', count: 1803.09 },
+        { vehicle: 'Cars', count: 428.79 },
+        { vehicle: 'Transport', count: 182.89 },
+        { vehicle: 'Scooter', count: 50.85 },
+        { vehicle: 'Motorcycle', count: 50.85 },
     ];
 
     const KolkataCO2 = [
-        { name: 'Transport', value: 110500 },
-        { name: 'Residential', value: 9550 },
-        { name: 'Industrial', value: 21050 },
-        { name: 'Waste Burning', value: 4750 },
-        { name: 'Diesel Generator', value: 3400 }
+        { name: 'Transport', value: 215850 },
+        { name: 'Residential', value: 109700 },
+        { name: 'Industrial', value: 63550 },
+        { name: 'Waste Burning', value: 29900 },
+        { name: 'Diesel Generator', value: 9945 }
     ];
 
     const KolkataSO2 = [
-        { name: 'Transport', value: 500 },
-        { name: 'Residential', value: 300 },
-        { name: 'Industrial', value: 2500 },
-        { name: 'Waste Burning', value: 50 },
-        { name: 'Diesel Generator', value: 50 },
+        { name: 'Transport', value: 950 },
+        { name: 'Residential', value: 1550 },
+        { name: 'Industrial', value: 2950 },
+        { name: 'Waste Burning', value: 150 },
+        { name: 'Diesel Generator', value: 650 },
     ];
 
     const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884d8', '#a3e4d7'];

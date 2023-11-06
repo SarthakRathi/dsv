@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Delhi.css"
-import { Paper, Typography } from '@mui/material'
+import { Paper, Typography, Button } from '@mui/material'
 import { BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 import { PieChart, Pie, Cell, Legend } from 'recharts';
@@ -12,34 +12,34 @@ const Delhi = () => {
     };
 
     const DelhiPopulation = [
-        { year: 2011, Population: 5107691 },
-        { year: 2012, Population: 5260195 },
-        { year: 2013, Population: 5417253 },
-        { year: 2014, Population: 5579001 },
-        { year: 2015, Population: 5745577 },
-        { year: 2016, Population: 5917128 },
-        { year: 2017, Population: 6093800 },
-        { year: 2018, Population: 6275748 },
-        { year: 2019, Population: 6451618 },
-        { year: 2020, Population: 6629347 },
-        { year: 2021, Population: 6807984 },
-        { year: 2022, Population: 6987077 },
-        { year: 2023, Population: 7166374 },
+        { year: 2011, Population: 22713934 },
+        { year: 2012, Population: 23463947 },
+        { year: 2013, Population: 24238725 },
+        { year: 2014, Population: 25039086 },
+        { year: 2015, Population: 25865875 },
+        { year: 2016, Population: 26719965 },
+        { year: 2017, Population: 27602257 },
+        { year: 2018, Population: 28513682 },
+        { year: 2019, Population: 29399141 },
+        { year: 2020, Population: 30290936 },
+        { year: 2021, Population: 31181377 },
+        { year: 2022, Population: 32065760 },
+        { year: 2023, Population: 32941309 },
     ];
 
     const DelhiVehicle = [
-        { vehicle: 'Cars', count: 530.02 },
-        { vehicle: 'Transport', count: 139.83 },
-        { vehicle: 'Scooter', count: 405.39 },
-        { vehicle: 'Motorcycle', count: 1803.09 },
+        { vehicle: 'Cars', count: 3311.58 },
+        { vehicle: 'Transport', count: 532.29 },
+        { vehicle: 'Scooter', count: 33.30 },
+        { vehicle: 'Motorcycle', count: 107.95 },
     ];
 
     const DelhiCO2 = [
-        { name: 'Transport', value: 110500 },
-        { name: 'Residential', value: 9550 },
-        { name: 'Industrial', value: 21050 },
-        { name: 'Waste Burning', value: 4750 },
-        { name: 'Diesel Generator', value: 3400 }
+        { name: 'Transport', value: 1378 },
+        { name: 'Residential', value: 3741 },
+        { name: 'Industrial', value: 1320 },
+        { name: 'Waste Burning', value: 3904 },
+        { name: 'Diesel Generator', value: 3534 }
     ];
 
     const DelhiSO2 = [
