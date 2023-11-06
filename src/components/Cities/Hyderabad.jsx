@@ -50,92 +50,89 @@ const Hyderabad = () => {
 
     return (
         <div className="hyderabad">
-            <div className="hyderabad1">
-                <Paper elevation={3} className='hcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
-                    <BarChart
-                        width={450}
-                        height={270}
-                        data={HyderabadPopulation}
-                    >
-                        <XAxis dataKey="year" />
-                        <YAxis />
+            <Paper elevation={3} className='hcard' sx={{ m: 5, p: 5, bgcolor: "#1e1e1e" }}>
+                <BarChart
+                    width={1000}
+                    height={550}
+                    data={HyderabadPopulation}
+                >
+                    <XAxis dataKey="year" />
+                    <YAxis />
+                    <Tooltip />
+                    <Bar dataKey="Population" fill="#8884d8" />
+                </BarChart>
+
+                <Typography variant="body1" sx={{ fontSize: "20px", fontWeight: "500", color: "#faebd7" }}>
+                    Increase in Population
+                </Typography>
+            </Paper>
+            <Paper elevation={3} className='hcard' sx={{ m: 5, p: 5, bgcolor: "#1e1e1e" }}>
+                <ResponsiveContainer width={1000} height={550}>
+                    <RadarChart data={HyderabadVehicle}>
+                        <PolarGrid />
+                        <PolarAngleAxis dataKey="vehicle" />
+                        <PolarRadiusAxis angle={45} domain={[0, 2000]} />
+                        <Radar name="Vehicle Count" dataKey="count" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+                    </RadarChart>
+                </ResponsiveContainer>
+
+                <Typography variant="body1" sx={{ fontSize: "20px", fontWeight: "500", color: "#faebd7" }}>
+                    New Registers Vehicles in 2020
+                </Typography>
+            </Paper>
+
+            <Paper elevation={3} className='hcard' sx={{ m: 5, p: 5, bgcolor: "#1e1e1e" }}>
+                <ResponsiveContainer width={1000} height={550}>
+                    <PieChart>
+                        <Pie
+                            dataKey="value"
+                            data={HyderabadCO2}
+                            nameKey="name"
+                            cx="50%"
+                            cy="50%"
+                            outerRadius={200}
+                            fill="#8884d8"
+                            label
+                        >
+                            {
+                                HyderabadCO2.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index]} />)
+                            }
+                        </Pie>
                         <Tooltip />
-                        <Bar dataKey="Population" fill="#8884d8" />
-                    </BarChart>
+                        <Legend />
+                    </PieChart>
+                </ResponsiveContainer>
 
-                    <Typography variant="body1" sx={{ fontSize: "20px", fontWeight: "500", color: "#faebd7" }}>
-                        Increase in Population
-                    </Typography>
-                </Paper>
-                <Paper elevation={3} className='hcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
-                    <ResponsiveContainer width="100%" height={300}>
-                        <RadarChart data={HyderabadVehicle}>
-                            <PolarGrid />
-                            <PolarAngleAxis dataKey="vehicle" />
-                            <PolarRadiusAxis angle={45} domain={[0, 2000]} />
-                            <Radar name="Vehicle Count" dataKey="count" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-                        </RadarChart>
-                    </ResponsiveContainer>
+                <Typography variant="body1" sx={{ fontSize: "20px", fontWeight: "500", color: "#faebd7" }}>
+                    CO2 Emmisions
+                </Typography>
+            </Paper>
+            <Paper elevation={3} className='hcard' sx={{ m: 5, p: 5, bgcolor: "#1e1e1e" }}>
+                <ResponsiveContainer width={1000} height={550}>
+                    <PieChart>
+                        <Pie
+                            dataKey="value"
+                            data={HyderabadSO2}
+                            nameKey="name"
+                            cx="50%"
+                            cy="50%"
+                            outerRadius={200}
+                            fill="#8884d8"
+                            label
+                        >
+                            {
+                                HyderabadSO2.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index]} />)
+                            }
+                        </Pie>
+                        <Tooltip />
+                        <Legend />
+                    </PieChart>
+                </ResponsiveContainer>
 
-                    <Typography variant="body1" sx={{ fontSize: "20px", fontWeight: "500", color: "#faebd7" }}>
-                        New Registers Vehicles in 2020
-                    </Typography>
-                </Paper>
-            </div>
-            <div className="hyderabad2">
-                <Paper elevation={3} className='hcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
-                    <ResponsiveContainer width="100%" height={270}>
-                        <PieChart>
-                            <Pie
-                                dataKey="value"
-                                data={HyderabadCO2}
-                                nameKey="name"
-                                cx="50%"
-                                cy="50%"
-                                outerRadius={90}
-                                fill="#8884d8"
-                                label
-                            >
-                                {
-                                    HyderabadCO2.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index]} />)
-                                }
-                            </Pie>
-                            <Tooltip />
-                            <Legend />
-                        </PieChart>
-                    </ResponsiveContainer>
-
-                    <Typography variant="body1" sx={{ fontSize: "20px", fontWeight: "500", color: "#faebd7" }}>
-                        CO2 Emmisions
-                    </Typography>
-                </Paper>
-                <Paper elevation={3} className='hcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
-                    <ResponsiveContainer width="100%" height={270}>
-                        <PieChart>
-                            <Pie
-                                dataKey="value"
-                                data={HyderabadSO2}
-                                nameKey="name"
-                                cx="50%"
-                                cy="50%"
-                                outerRadius={90}
-                                fill="#8884d8"
-                                label
-                            >
-                                {
-                                    HyderabadSO2.map((entry, index) => <Cell key={`cell-${index}`} fill={COLORS[index]} />)
-                                }
-                            </Pie>
-                            <Tooltip />
-                            <Legend />
-                        </PieChart>
-                    </ResponsiveContainer>
-
-                    <Typography variant="body1" sx={{ fontSize: "20px", fontWeight: "500", color: "#faebd7" }}>
-                        SO2 Emmisions
-                    </Typography>
-                </Paper>
-            </div>
+                <Typography variant="body1" sx={{ fontSize: "20px", fontWeight: "500", color: "#faebd7" }}>
+                    SO2 Emmisions
+                </Typography>
+            </Paper>
         </div>
     )
 }

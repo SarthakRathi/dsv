@@ -3,19 +3,9 @@
   flex-direction: column;
 }
 
-.mumbai1 {
-  display: flex;
-  flex-direction: row;
-}
-
-.mumbai2 {
-  display: flex;
-  flex-direction: row;
-}
-
 .mcard {
-  width: 530px;
-  height: 350px;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;

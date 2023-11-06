@@ -51,10 +51,10 @@ const Mumbai = () => {
     return (
         <div className="mumbai">
             <div className="mumbai1">
-                <Paper elevation={3} className='mcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
+                <Paper elevation={3} className='mcard' sx={{ m: 5, p: 5, bgcolor: "#1e1e1e" }}>
                     <BarChart
-                        width={450}
-                        height={270}
+                        width={1000}
+                        height={550}
                         data={MumbaiPopulation}
                     >
                         <XAxis dataKey="year" />
@@ -67,8 +67,8 @@ const Mumbai = () => {
                         Increase in Population
                     </Typography>
                 </Paper>
-                <Paper elevation={3} className='mcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
-                    <ResponsiveContainer width="100%" height={300}>
+                <Paper elevation={3} className='mcard' sx={{ m: 5, p: 5, bgcolor: "#1e1e1e" }}>
+                    <ResponsiveContainer width={1000} height={550}>
                         <RadarChart data={MumbaiVehicle}>
                             <PolarGrid />
                             <PolarAngleAxis dataKey="vehicle" />
@@ -83,8 +83,8 @@ const Mumbai = () => {
                 </Paper>
             </div>
             <div className="mumbai2">
-                <Paper elevation={3} className='mcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
-                    <ResponsiveContainer width="100%" height={270}>
+                <Paper elevation={3} className='mcard' sx={{ m: 5, p: 5, bgcolor: "#1e1e1e" }}>
+                    <ResponsiveContainer width={1000} height={550}>
                         <PieChart>
                             <Pie
                                 dataKey="value"
@@ -92,7 +92,7 @@ const Mumbai = () => {
                                 nameKey="name"
                                 cx="50%"
                                 cy="50%"
-                                outerRadius={90}
+                                outerRadius={200}
                                 fill="#8884d8"
                                 label
                             >
@@ -109,8 +109,8 @@ const Mumbai = () => {
                         CO2 Emmisions
                     </Typography>
                 </Paper>
-                <Paper elevation={3} className='mcard' sx={{ ml: 5, my: 3, bgcolor: "#1e1e1e" }}>
-                    <ResponsiveContainer width="100%" height={270}>
+                <Paper elevation={3} className='mcard' sx={{ m: 5, p: 5, bgcolor: "#1e1e1e" }}>
+                    <ResponsiveContainer width={1000} height={550}>
                         <PieChart>
                             <Pie
                                 dataKey="value"
@@ -118,7 +118,7 @@ const Mumbai = () => {
                                 nameKey="name"
                                 cx="50%"
                                 cy="50%"
-                                outerRadius={90}
+                                outerRadius={200}
                                 fill="#8884d8"
                                 label
                             >

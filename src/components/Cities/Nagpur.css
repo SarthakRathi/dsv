@@ -3,19 +3,9 @@
   flex-direction: column;
 }
 
-.nagpur1 {
-  display: flex;
-  flex-direction: row;
-}
-
-.nagpur2 {
-  display: flex;
-  flex-direction: row;
-}
-
 .ncard {
-  width: 530px;
-  height: 350px;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;

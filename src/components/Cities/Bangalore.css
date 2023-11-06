@@ -3,19 +3,9 @@
   flex-direction: column;
 }
 
-.bangalore1 {
-  display: flex;
-  flex-direction: row;
-}
-
-.bangalore2 {
-  display: flex;
-  flex-direction: row;
-}
-
 .bcard {
-  width: 530px;
-  height: 350px;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,6 +13,6 @@
   flex-direction: column;
 }
 
-.pcard:hover {
+.bcard:hover {
   border: 2px solid #bb86fc;
 }

@@ -3,19 +3,9 @@
   flex-direction: column;
 }
 
-.pune1 {
-  display: flex;
-  flex-direction: row;
-}
-
-.pune2 {
-  display: flex;
-  flex-direction: row;
-}
-
 .pcard {
-  width: 530px;
-  height: 350px;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
