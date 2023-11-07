@@ -13,7 +13,7 @@ import Selection from './Cities/Selection';
 
 const Sidebar = () => {
 
-    const [selectedCity, setSelectedCity] = useState("");
+    const [selectedCity, setSelectedCity] = useState("Selection");
 
     const handleCityClick = (city) => {
         setSelectedCity(city);
@@ -31,6 +31,14 @@ const Sidebar = () => {
                 </div>
 
                 <div className="cities">
+
+                    <div className="city">
+                        <Typography variant="body1" sx={{ fontSize: "20px", mx: 4, p: 2 }} onClick={() => handleCityClick("Selection")}>
+                            <LocationOn fontSize="small" sx={{ mr: 2 }} />
+                            Selection
+                        </Typography>
+                    </div>
+
                     <div className="city">
                         <Typography variant="body1" sx={{ fontSize: "20px", mx: 4, p: 2 }} onClick={() => handleCityClick("Pune")}>
                             <LocationOn fontSize="small" sx={{ mr: 2 }} />
@@ -82,7 +90,7 @@ const Sidebar = () => {
                 </div>
             </div>
 
-            {selectedCity === "" ? (
+            {selectedCity === "Selection" ? (
                 <Selection />
             ) : null}
 

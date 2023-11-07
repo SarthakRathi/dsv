@@ -1,6 +1,18 @@
 .selection {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.scard {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
   align-items: center;
-  flex-grow: 1;
+  justify-content: center;
+  background-color: #1f1b24;
+  flex-direction: column;
+}
+
+.pcard:hover {
+  border: 2px solid #bb86fc;
 }
